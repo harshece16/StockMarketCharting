@@ -1,12 +1,10 @@
 package com.hg.fsd.userservice.service;
 
-import com.hg.fsd.userservice.entity.User;
+import com.hg.fsd.userservice.dtos.UserRequestModel;
+import com.hg.fsd.userservice.dtos.UserResponseModel;
 
 public interface UserService {
 
-	User save(User user);
-
-	Iterable<User> findAll();
-
-	void deleteById(Integer id);
+	public UserResponseModel addUser(UserRequestModel userRequestModel);
+    public UserResponseModel updateUser(UserRequestModel userRequestModel);
 }

@@ -1,11 +1,11 @@
 package com.hg.fsd.userservice.dao;
+import com.hg.fsd.userservice.model.User;
 
-import org.springframework.stereotype.Repository;
-import com.hg.fsd.userservice.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
+public interface UserDao extends JpaRepository<User,String> {
 
-@Repository("Users")
-public interface UserDao extends JpaRepository<User,Integer> {
 
 }

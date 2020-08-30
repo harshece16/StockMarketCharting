@@ -8,6 +8,7 @@ class UserAdminServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
+		//tests by mock mvc to be implemented
 	}
 
 }
